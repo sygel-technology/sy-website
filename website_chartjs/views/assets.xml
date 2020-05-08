@@ -6,10 +6,10 @@
 <odoo>
     <template id="assets_frontend" inherit_id="website.assets_frontend">
         <xpath expr="link[last()]" position="after">
-            <link rel="stylesheet" type="text/scss" href="/website_chartjs/static/lib/chart/Chart.min.css"/>
+            <link rel="stylesheet" href="/website_chartjs/static/src/css/Chart.min.css"/>
         </xpath>
         <xpath expr="script[last()]" position="after">
-            <script type="text/javascript" src="/website_chartjs/static/lib/chart/Chart.min.js"></script>
+            <script type="text/javascript" src="/website_chartjs/static/src/js/Chart.min.js"></script>
         </xpath>
     </template>
 </odoo>
