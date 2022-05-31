@@ -11,8 +11,8 @@ class View(models.Model):
     @api.model
     def _prepare_qcontext(self):
         vals = super(View, self)._prepare_qcontext()
-        if hasattr(request, 'website') and not self.env.user.has_group('base.group_user') and \
-                request.website and \
+        if request and getattr(request, 'website', False) and \
+                not self.env.user.has_group('base.group_user') and \
                 request.website.excluded_language_ids and \
                 vals.get('languages'):
             vals['languages'] = list(filter(
