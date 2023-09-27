@@ -7,6 +7,7 @@ Available addons
 ----------------
 addon | version | summary
 --- | --- | ---
-[website_chartjs](website_chartjs/) | 12.0.1.0.0 | Add the chart js library on the website.
+[website_sale_partner_firstname](website_sale_partner_firstname/) | 15.0.1.0.0 | Introduce lastname in website.
+[website_sale_partner_second_lastname](website_sale_partner_second_lastname/) | 15.0.1.0.0 | Introduce second lastname in website.
 
 [//]: # (end addons)
