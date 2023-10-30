@@ -4,7 +4,7 @@
 
 ================================
 Website Signup Additional Fields
-===============================
+================================
 
 This module allows setting default values to users registered through the website.
 
