@@ -7,11 +7,9 @@ from odoo import fields, models
 class Website(models.Model):
     _inherit = "website"
 
-    signup_use_additional_fields = fields.Boolean(
-        string="Use Signup Additional Fields"
-    )
+    signup_use_additional_fields = fields.Boolean(string="Use Signup Additional Fields")
     signup_additional_fields = fields.Many2many(
         string="Signup Additional Fields",
         comodel_name="ir.model.fields",
-        domain=[("model", "=", "res.partner")]
+        domain=[("model", "=", "res.partner")],
     )

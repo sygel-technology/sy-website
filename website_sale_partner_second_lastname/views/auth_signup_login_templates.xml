@@ -11,9 +11,15 @@
         <xpath expr="//div[hasclass('field-lastname')]" position="after">
             <div class="form-group field-secondlastname">
                 <label for="name">Second Last Name</label>
-                <input type="text" name="lastname2" t-att-value="lastname2" id="lastname2" class="form-control form-control-sm"
+                <input
+                    type="text"
+                    name="lastname2"
+                    t-att-value="lastname2"
+                    id="lastname2"
+                    class="form-control form-control-sm"
                     t-att-readonly="'readonly' if only_passwords else None"
-                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None"
+                />
             </div>
         </xpath>
     </template>

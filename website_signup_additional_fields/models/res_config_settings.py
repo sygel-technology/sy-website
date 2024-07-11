@@ -10,12 +10,12 @@ class ResConfigSettings(models.TransientModel):
     website_signup_use_additional_fields = fields.Boolean(
         string="Use Signup Additional Fields",
         related="website_id.signup_use_additional_fields",
-        readonly=False
+        readonly=False,
     )
     website_signup_additional_fields = fields.Many2many(
         string="Signup Additional Fields",
         comodel_name="ir.model.fields",
         related="website_id.signup_additional_fields",
         readonly=False,
-        domain=[("model", "=", "res.partner")]
+        domain=[("model", "=", "res.partner")],
     )
