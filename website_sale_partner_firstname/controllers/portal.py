@@ -1,16 +1,15 @@
 # Copyright 2023 Manuel Regidor <manuel.regidor@sygel.es>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+import logging
+
 from odoo import _
 from odoo.http import request
 
 from odoo.addons.portal.controllers.portal import CustomerPortal
 
-import logging
-
 
 class CustomerPortal(CustomerPortal):
-
     CustomerPortal.OPTIONAL_BILLING_FIELDS += [
         "firstname",
         "lastname",

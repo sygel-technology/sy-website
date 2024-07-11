@@ -6,7 +6,7 @@
     "version": "15.0.1.0.0",
     "category": "Website",
     "summary": "Introduce lastname in website.",
-    "website": "https://github.com/OCA/website",
+    "website": "https://github.com/sygel-technology/sy-website",
     "author": "Sygel Technology," "Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,

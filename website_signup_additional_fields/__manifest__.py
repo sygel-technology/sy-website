@@ -11,10 +11,7 @@
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": [
-        "website",
-        "auth_signup"
-    ],
+    "depends": ["website", "auth_signup"],
     "data": [
         "views/res_config_settings_views.xml",
     ],
