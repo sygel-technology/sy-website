@@ -1,6 +1,9 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+/.venv
+/.pytest_cache
+/.ruff_cache
 
 # C extensions
 *.so
@@ -20,6 +23,16 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+*.eggs
+
+# Debian packages
+*.deb
+
+# Redhat packages
+*.rpm
+
+# MacOS packages
+*.dmg
 
 # Installer logs
 pip-log.txt
@@ -39,9 +52,18 @@ coverage.xml
 # Pycharm
 .idea
 
+# Eclipse
+.settings
+
 # Visual Studio cache/options directory
 .vs/
 .vscode
+
+# OSX Files
+.DS_Store
+
+# Django stuff:
+*.log
 
 # Mr Developer
 .mr.developer.cfg
@@ -58,5 +80,5 @@ docs/_build/
 *~
 *.swp
 
-# Compiled formats, cache, temporary files, git garbage
-**.DS_Store
+# OCA rules
+!static/lib/
