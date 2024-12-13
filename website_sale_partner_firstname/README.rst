@@ -68,11 +68,6 @@ Maintainer
 
 This module is maintained by Sygel.
 
-Maintainer
-~~~~~~~~~~
-
-This module is maintained by Sygel.
-
 .. image:: https://www.sygel.es/logo.png
    :alt: Sygel
    :target: https://www.sygel.es
