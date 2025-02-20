@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Ángel García de la Chica Herrera <angel.garcia@sygel.es>
+ License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="website_hide_portal_my_timesheets_portal_my_home_timesheet"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >website.hide.portal.my.timesheets.portal.my.home.timesheet</field>
+        <field name="inherit_id" ref="hr_timesheet.portal_my_home_timesheet" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//t[@t-value=&quot;'/my/timesheets'&quot;]/.."
+                position='attributes'
+            >
+                <attribute name="t-if">False</attribute>
+            </xpath>
+            <xpath
+                expr="//t[@t-value=&quot;'/my/timesheets'&quot;]"
+                position='attributes'
+            >
+                <attribute name="t-value" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
