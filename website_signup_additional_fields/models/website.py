@@ -9,7 +9,7 @@ class Website(models.Model):
 
     signup_use_additional_fields = fields.Boolean(string="Use Signup Additional Fields")
     signup_additional_fields = fields.Many2many(
-        string="Signup Additional Fields",
+        string="Additional Signup Fields",
         comodel_name="ir.model.fields",
         domain=[("model", "=", "res.partner")],
     )
