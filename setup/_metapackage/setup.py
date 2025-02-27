@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for sygel-technology-sy-website Odoo addons",
     version=version,
     install_requires=[
+        'odoo-addon-website_hide_portal_my_timesheets>=15.0dev,<15.1dev',
         'odoo-addon-website_sale_partner_firstname>=15.0dev,<15.1dev',
         'odoo-addon-website_sale_partner_second_lastname>=15.0dev,<15.1dev',
         'odoo-addon-website_signup_additional_fields>=15.0dev,<15.1dev',

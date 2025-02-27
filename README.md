@@ -21,6 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
+[website_hide_portal_my_timesheets](website_hide_portal_my_timesheets/) | 15.0.1.0.0 |  | Hide My Timesheets View in Portal
 [website_sale_partner_firstname](website_sale_partner_firstname/) | 15.0.1.0.0 |  | Introduce lastname in website.
 [website_sale_partner_second_lastname](website_sale_partner_second_lastname/) | 15.0.1.0.0 |  | Introduce second lastname in website.
 [website_signup_additional_fields](website_signup_additional_fields/) | 15.0.1.0.0 |  | Add default fields when creating user from website.
