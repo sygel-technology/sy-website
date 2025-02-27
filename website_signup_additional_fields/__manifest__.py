@@ -7,7 +7,7 @@
     "category": "Website",
     "summary": "Add default fields when creating user from website.",
     "website": "https://github.com/sygel-technology/sy-website",
-    "author": "Sygel Technology",
+    "author": "Sygel, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,

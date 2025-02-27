@@ -30,7 +30,7 @@ msgstr "Opciones de configuración"
 #. module: website_signup_additional_fields
 #: model:ir.model.fields,field_description:website_signup_additional_fields.field_res_config_settings__website_signup_additional_fields
 #: model:ir.model.fields,field_description:website_signup_additional_fields.field_website__signup_additional_fields
-msgid "Signup Additional Fields"
+msgid "Additional Signup Fields"
 msgstr "Campos adicionales de registro"
 
 #. module: website_signup_additional_fields
