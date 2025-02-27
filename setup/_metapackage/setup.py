@@ -11,6 +11,7 @@ setuptools.setup(
         'odoo-addon-website_sale_partner_firstname>=15.0dev,<15.1dev',
         'odoo-addon-website_sale_partner_second_lastname>=15.0dev,<15.1dev',
         'odoo-addon-website_signup_additional_fields>=15.0dev,<15.1dev',
+        'odoo-addon-website_task_state_filter>=15.0dev,<15.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',
