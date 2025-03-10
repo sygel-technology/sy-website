@@ -4,7 +4,7 @@
 {
     "name": "Hide My Timesheets View in Portal",
     "summary": "Hide My Timesheets View in Portal",
-    "version": "15.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Website",
     "website": "https://github.com/sygel-technology/sy-website",
     "author": "Sygel, Odoo Community Association (OCA)",
