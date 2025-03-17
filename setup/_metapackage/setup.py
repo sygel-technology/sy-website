@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo-addon-website_hide_portal_my_timesheets>=16.0dev,<16.1dev',
+        'odoo-addon-website_task_state_filter>=16.0dev,<16.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',

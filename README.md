@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [website_hide_portal_my_timesheets](website_hide_portal_my_timesheets/) | 16.0.1.0.0 |  | Hide My Timesheets View in Portal
+[website_task_state_filter](website_task_state_filter/) | 16.0.1.0.0 |  | This module allow to filter tasks by states in website.
 
 [//]: # (end addons)
 
