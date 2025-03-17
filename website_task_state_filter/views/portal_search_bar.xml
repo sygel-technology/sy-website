@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Copyright 2019 Valentin Vinagre <valentin.vinagre@sygel.es>
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).-->
+<odoo>
+    <template id="portal_searchbar_filter_states" inherit_id="portal.portal_searchbar">
+        <xpath expr="//div[@t-if='searchbar_filters']" position="after">
+            <div t-if="searchbar_filters_state" class="ms-lg-2">
+                <span class="small mr-1 navbar-text">Filter by State :</span>
+                <div class="btn-group">
+                    <button
+                        id="portal_searchbar_filters_state"
+                        data-bs-toggle="dropdown"
+                        class="btn btn-secondary btn-sm dropdown-toggle"
+                    >
+                        <t
+                            t-out="searchbar_filters_state[filterbystate].get('label', 'All')"
+                        />
+                    </button>
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="portal_searchbar_filters_state"
+                    >
+                        <t t-foreach="searchbar_filters_state" t-as="option">
+                            <a
+                                t-att-href="default_url + '?' + keep_query('*', filterbystate=option)"
+                                t-attf-class="dropdown-item#{filterbystate == option and ' active' or ''}"
+                            >
+                                <span
+                                    t-out="searchbar_filters_state[option].get('label')"
+                                />
+                            </a>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
