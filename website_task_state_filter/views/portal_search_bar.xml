@@ -4,18 +4,18 @@
 <odoo>
     <template id="portal_searchbar_filter_states" inherit_id="portal.portal_searchbar">
         <xpath expr="//div[@t-if='searchbar_filters']" position="after">
-            <div t-if="searchbar_filters_state" class="form-inline ml-lg-2">
+            <div t-if="searchbar_filters_state" class="ms-lg-2">
                 <span class="small mr-1 navbar-text">Filter by State :</span>
-                    <div class="btn-group">
+                <div class="btn-group">
                     <button
                         id="portal_searchbar_filters_state"
-                        data-toggle="dropdown"
+                        data-bs-toggle="dropdown"
                         class="btn btn-secondary btn-sm dropdown-toggle"
                     >
                         <t
-                            t-esc="searchbar_filters_state[filterbystate].get('label', 'All')"
+                            t-out="searchbar_filters_state[filterbystate].get('label', 'All')"
                         />
-                        </button>
+                    </button>
                     <div
                         class="dropdown-menu"
                         aria-labelledby="portal_searchbar_filters_state"
@@ -26,7 +26,7 @@
                                 t-attf-class="dropdown-item#{filterbystate == option and ' active' or ''}"
                             >
                                 <span
-                                    t-esc="searchbar_filters_state[option].get('label')"
+                                    t-out="searchbar_filters_state[option].get('label')"
                                 />
                             </a>
                         </t>
