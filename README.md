@@ -16,6 +16,13 @@ Odoo website builder addons
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[website_hide_portal_my_timesheets](website_hide_portal_my_timesheets/) | 16.0.1.0.0 |  | Hide My Timesheets View in Portal
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
