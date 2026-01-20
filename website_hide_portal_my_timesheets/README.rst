@@ -22,7 +22,7 @@ Hide My Timesheets View in Portal
 
 |badge1| |badge2| |badge3|
 
-This module allows you to hide the list view with all 'my timesheets' in
+This module allows you to hide the list view with all 'Timesheets' in
 the portal.
 
 **Table of contents**
@@ -36,6 +36,21 @@ Configuration
 To configure this module, you need to:
 
 1. Nothing
+
+Usage
+=====
+
+To use this module, you need to:
+
+1. Go to the /my subdomain of your url. Example: https://www.sygel.es/my
+2. See that "Timesheets" button is no longer available.
+
+Known issues / Roadmap
+======================
+
+-  Some timesheets still can be accesed from the task form view of the
+   portal if they are configured to do it, the purpose of this module is
+   not hiding that.
 
 Bug Tracker
 ===========

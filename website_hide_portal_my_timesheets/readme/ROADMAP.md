@@ -1,0 +1,1 @@
+- Some timesheets still can be accesed from the task form view of the portal if they are configured to do it, the purpose of this module is not hiding that. 
