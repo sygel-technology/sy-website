@@ -73,9 +73,8 @@ class CustomerPortal(CustomerPortal):
         search_in="content",
         groupby=None,
         filterbystate=None,
-        **kw
+        **kw,
     ):
-
         searchbar_filters = self._get_my_tasks_searchbar_filters()
         searchbar_filters_state = self._get_my_tasks_searchbar_filters_state()
         if not filterby:
