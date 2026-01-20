@@ -16,9 +16,8 @@ class CustomerPortal(CustomerPortal):
             "all": {"order": -3, "label": _("All"), "domain": []},
         }
         # searchbar_filters_state all states
-        for state in request.env["project.task.type"].search(
-            [("case_default", "=", True)]
-        ):
+        stages = request.env["project.task.type"].search([("case_default", "=", True)])
+        for state in stages:
             searchbar_filters_state.update(
                 {
                     str(state.id): {
@@ -29,11 +28,7 @@ class CustomerPortal(CustomerPortal):
                 }
             )
         # searchbar_filters_state open
-        ptt_active = (
-            request.env["project.task.type"]
-            .search([("case_default", "=", True), ("fold", "=", True)])
-            .ids
-        )
+        ptt_active = stages.filtered("fold").ids
         searchbar_filters_state.update(
             {
                 "active": {

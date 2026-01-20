@@ -29,6 +29,15 @@ This module allow to filter tasks by states in website.
 .. contents::
    :local:
 
+Configuration
+=============
+
+You can only filter by stages marked as default for new projects. To
+mark an stage as this, you need to:
+
+1. Go to Project / Configuration / Task Stages
+2. Select a task. Mark "Default for New Projects"
+
 Usage
 =====
 
@@ -37,6 +46,18 @@ To use this module, you need to:
 1. Go to *Portal -> Tasks*.
 2. Select the state by which you want to filter by clicking on the
    "Filter by State" field.
+
+Known issues / Roadmap
+======================
+
+This module overwrites the portal_my_tasks controller function for the
+/my/tasks URL path. Modules that inherit or extend this function may not
+work as expected.
+
+This limitation has been accepted because overwriting the function is
+the only efficient way to implement the required behavior for this
+module, and modules that inherit the portal_my_tasks controller are
+uncommon.
 
 Bug Tracker
 ===========

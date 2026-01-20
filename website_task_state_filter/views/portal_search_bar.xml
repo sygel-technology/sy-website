@@ -5,12 +5,12 @@
     <template id="portal_searchbar_filter_states" inherit_id="portal.portal_searchbar">
         <xpath expr="//div[@t-if='searchbar_filters']" position="after">
             <div t-if="searchbar_filters_state" class="ms-lg-2">
-                <span class="small mr-1 navbar-text">Filter by State :</span>
+                <span class="small me-1 navbar-text">Filter by State :</span>
                 <div class="btn-group">
                     <button
                         id="portal_searchbar_filters_state"
                         data-bs-toggle="dropdown"
-                        class="btn btn-secondary btn-sm dropdown-toggle"
+                        class="btn btn-light dropdown-toggle"
                     >
                         <t
                             t-out="searchbar_filters_state[filterbystate].get('label', 'All')"
