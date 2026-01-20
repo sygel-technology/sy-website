@@ -22,6 +22,6 @@ class TimesheetCustomerPortal(CustomerPortal):
         search=None,
         search_in="all",
         groupby="none",
-        **kw
+        **kw,
     ):
         return request.render("http_routing.404")
