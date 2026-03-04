@@ -1,7 +1,8 @@
 [project]
 name = "odoo-addons-sygel-technology-sy-website"
-version = "18.0.20260304.0"
+version = "18.0.20260304.1"
 dependencies = [
+    "odoo-addon-website_hide_portal_my_timesheets==18.0.*",
     "odoo-addon-website_task_state_filter==18.0.*",
 ]
 classifiers=[
