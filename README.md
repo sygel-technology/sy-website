@@ -16,6 +16,13 @@ Odoo website builder addons
 <!-- prettier-ignore-start -->
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[website_task_state_filter](website_task_state_filter/) | 18.0.1.0.0 |  | This module allow to filter tasks by states in website.
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
